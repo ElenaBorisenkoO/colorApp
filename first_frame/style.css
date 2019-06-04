@@ -2,7 +2,7 @@ body {
     background: mediumseagreen;
 }
 
-button{
+button {
     display: inline-block;
     vertical-align: middle;
     background-color: #000;
@@ -17,6 +17,6 @@ button{
     margin-right: 15px;
 }
 
-button:last-of-type{
+button:last-of-type {
     margin-right: 0;
 }
