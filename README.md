@@ -7,4 +7,4 @@ appropriate buttons. Available colors:
 ### BLUE
 ### GREEN
 
-You can run this app only in Mozilla Firefox browser.
+❗️You can run this app only in Mozilla Firefox browser.
