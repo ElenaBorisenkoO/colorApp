@@ -1,5 +1,8 @@
-const secondFrame = window.parent.$("#secondFrame").contents().find('body');
+ $(document).ready(function() {
 
-$('button').click(function(event) {
-    secondFrame.css('backgroundColor', event.target.className)
-});
+     const secondFrame = window.parent.$("#secondFrame").contents().find('body');
+
+     $('button').click(function(event) {
+         secondFrame.css('background-color', event.target.className)
+     });
+ });

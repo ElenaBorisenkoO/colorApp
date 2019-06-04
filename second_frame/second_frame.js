@@ -1,4 +1,8 @@
+const firstFrame = window.parent.document.getElementById("firstFrame");
 
-function changeColor(color) {
-    window.parent.document.getElementById("firstFrame").contentWindow.document.body.style.background = color;
-}
+document.querySelectorAll('button').forEach((button) => {
+    button.addEventListener('click', (event) => {
+        firstFrame.contentWindow.document.body.style.background = event.target.className;
+
+    });
+});
