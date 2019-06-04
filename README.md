@@ -6,3 +6,5 @@ appropriate buttons. Available colors:
 ### YELLOW
 ### BLUE
 ### GREEN
+
+You can run this app only in Mozilla browser.
