@@ -1,0 +1,22 @@
+body {
+    background: mediumseagreen;
+}
+
+button{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #000;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    padding: 10px 20px;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    min-width: 100px;
+    margin-right: 15px;
+}
+
+button:last-of-type{
+    margin-right: 0;
+}
