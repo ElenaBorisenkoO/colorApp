@@ -1,8 +1,14 @@
-const firstFrame = window.parent.document.getElementById("firstFrame");
+window.addEventListener("message", function (event) {
+
+    window.parent.frames[1].document.body.style.background = event.data;
+
+}, false);
 
 document.querySelectorAll('button').forEach((button) => {
     button.addEventListener('click', (event) => {
-        firstFrame.contentWindow.document.body.style.background = event.target.dataset.color;
+        const color = event.target.dataset.color;
+        window.parent.frames[0].postMessage(color, '*');
 
     });
 });
+

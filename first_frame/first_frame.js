@@ -1,8 +1,14 @@
- $(document).ready(function() {
+$(document).ready(function () {
 
-     const secondFrame = window.parent.$("#secondFrame").contents().find('body');
+    $('button').click(function (event) {
+        const color = event.target.dataset.color;
+        window.parent.frames[1].postMessage(color, '*');
+    });
+});
 
-     $('button').click(function(event) {
-         secondFrame.css('background-color', event.target.dataset.color)
-     });
- });
+
+window.addEventListener("message", function (event) {
+
+    window.parent.frames[0].document.body.style.background = event.data;
+
+}, false);
